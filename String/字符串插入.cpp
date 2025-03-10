@@ -14,7 +14,8 @@ int main(){
     for(int i =0;i<a.length();i++){
         string temp;
         temp = a.substr(0,i)+ b + a.substr(i);
-        
+
+        //双指针的引用，辅助一个从头，一个从尾遍历字符串
         int n = 0,m = temp.length()-1;
         while(n <= m){
             if(temp[n] != temp[m]){
